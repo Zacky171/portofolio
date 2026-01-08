@@ -11,17 +11,17 @@ html {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
 }
 
 .animate-slide {
-    animation: slide 20s linear infinite;
+    animation: slide 10s linear infinite;
 }
 
 @keyframes slide-continuous {
     0% { transform: translateX(100%); }
-    100% { transform: translateX(-200%); }
+    100% { transform: translateX(-210%); }
 }
 .animate-slide-continuous {
     animation: slide-continuous 30s ease-in-out infinite;
@@ -37,13 +37,3 @@ header.scrolled {
     backdrop-filter: blur(10px);
     border-color: rgba(139, 92, 246, 0.3);
 }
-
-
-
-
-
-
-
-
-
-
