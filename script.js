@@ -83,6 +83,7 @@ let certifications = [
         image: "/images/front_end.png",
         link: "https://www.dicoding.com/certificates/EYX4KMV86PDL",
     },
+    
 ];
 
 let education = [
@@ -140,6 +141,36 @@ function populateJourney() {
 
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', populateJourney);
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -10px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-visible');
+        }
+    });
+}, observerOptions);
+
+// Observe all elements with animate-on-scroll class
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(el => observer.observe(el));
+});
+
+// Header scroll effect
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
 // Initialize particles.js
 particlesJS('particles-js', {
