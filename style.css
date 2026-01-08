@@ -24,7 +24,7 @@ html {
     100% { transform: translateX(-100%); }
 }
 .animate-slide-continuous {
-    animation: slide-continuous 10s ease-in-out infinite;
+    animation: slide-continuous 20s ease-in-out infinite;
 }
 
 .animate-slide-continuous:hover {
@@ -91,5 +91,6 @@ header.scrolled {
         transform: scale(1);
     }
 }
+
 
 
