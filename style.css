@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.blueShadow {
+    box-shadow: 0px 14px 55px rgba(109, 40, 217, 0.45);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-slide {
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide-continuous {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-slide-continuous {
+    animation: slide-continuous 20s linear infinite;
+}
+
+/* Header background on scroll */
+header.scrolled {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    border-color: rgba(139, 92, 246, 0.3);
+}
