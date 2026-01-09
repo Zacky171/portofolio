@@ -21,7 +21,7 @@ html {
 
 @keyframes slide-continuous {
     0% { transform: translateX(100%); }
-    100% { transform: translateX(-210%); }
+    100% { transform: translateX(-250%); }
 }
 .animate-slide-continuous {
     animation: slide-continuous 30s ease-in-out infinite;
@@ -36,4 +36,5 @@ header.scrolled {
     background-color: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(10px);
     border-color: rgba(139, 92, 246, 0.3);
+
 }
